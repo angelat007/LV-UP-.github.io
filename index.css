@@ -1,3 +1,5 @@
+html { scroll-behavior: smooth; }
+
 * {
     box-sizing: border-box;
 }
@@ -5,9 +7,11 @@
 body {
     font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
     margin: 0;
-
 }
 
+header {
+    width: 100%;
+}
 
 h1 {font-size: 2.5em;}
 h2{font-size: 1.7em;}
@@ -34,9 +38,15 @@ button:hover {
     margin: auto;
 }
 
+.color-acentos{ color: blueviolet;}
+
+/* SECCION BARRA*/
+
+
 header {
     background-color: rgb(245,245,245);
 }
+
 
 header .logo {
     margin: 0;
@@ -51,6 +61,8 @@ header .conteiner {
     flex-direction: column;
     align-items: center;
 }
+
+
 
 header .nav {
     display: flex;
@@ -76,13 +88,13 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("hero.jpg");
+    ,url("Media/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -91,4 +103,240 @@ header a:hover {
 #hero h1{
         color: rgb(255, 255, 255);
 
+}
+
+/* SECCION accesorios */
+
+
+#accesorios .conteiner{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/*Nuestors-tutoriales*/
+
+#Nuestors-tutoriales{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Nuestors-programas h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#Nuestors-tutoriales .conteiner{
+    padding: 150px, 0px;
+}
+
+#Nuestors-tutoriales p{
+    display: none;
+}
+
+/* cartas */
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Estrategia-warzon.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Rush-fortnite.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/Sin-MIEDO.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/*mejores-componentes-PC*/
+
+#mejores-componentes-PC {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#mejores-componentes-PC h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#mejores-componentes-PC .conteiner{
+    padding: 150px, 0px;
+}
+
+#mejores-componentes-PC p{
+    display: none;
+}
+
+/* cartas */
+
+.cart:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/RAM.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cart:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/GRAFICAS.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cart:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Media/PROCESADORES.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/*Iniciar-seccion*/
+
+#Iniciar-seccion h1 {
+    font-size: 9vw;
+}
+
+#Iniciar-seccion button{
+    font-size: 5vw;
+}
+
+#Iniciar-seccion {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30,30,30)
+}
+
+/*©*/
+
+footer {
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0;
+    color: rgb(100,100,100);
+    padding: 12px;
+}
+footer .conteiner {
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Vercion para PC*/
+
+@media (min-width:720px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;  
+    }
+
+    #accesorios .conteiner{
+        max-width: 600px;
+    }
+
+    #Nuestors-tutoriales .cartitas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Nuestors-tutoriales p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #Nuestors-tutoriales h3{
+        margin: 0;
+    } 
+
+    #Nuestors-tutoriales .cartas{
+            padding: 50px;
+    }
+
+    #mejores-componentes-PC .carts {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mejores-componentes-PC p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mejores-componentes-PC h3{
+        margin: 0;
+    }
+
+    #mejores-componentes-PC .cart{
+        padding: 50px;
+    }
 }
