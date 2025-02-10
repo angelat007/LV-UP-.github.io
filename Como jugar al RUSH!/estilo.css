@@ -1,4 +1,4 @@
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth;}
 
 * {
     box-sizing: border-box;
@@ -22,6 +22,10 @@ header {
     background-color: rgb(245,245,245);
 }
 
+.conteiner {
+    max-width: 1100px;
+    margin: auto;
+}
 
 header .logo {
     margin: 0;
@@ -36,8 +40,6 @@ header .container {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 header .nav {
     display: flex;
@@ -57,15 +59,10 @@ header a:hover {
     color: blueviolet;
 }
 
-.conteiner {
-    max-width: 1100px;
-    margin: auto;
-}
+.color-texto { color: blueviolet;}
 
-.color-acentos{ color: blueviolet;}
-
-#principal {
-    display: flex;
+#principal{
+        display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -76,7 +73,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("Media/estrategia-img.jpg");
+    ,url("Media/rush-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -88,59 +85,51 @@ header a:hover {
         color: rgb(255, 255, 255);
 }
 
-/*seccion inicio*/
+/*Seccion termino rush*/
 
-#inicio{
+#termino-rush{
     padding: 20%;
 }
 
-#inicio .container{
+#termino-rush .container{
     text-align: center;
-    padding: 200px 12px;
-    font-size: 4.5vw;
-
+    font-size: 2.7vw;
 }
 
-/*seccion posicionamiento*/
-
-#posicionamiento {
+/*Secction exito*/
+#exito {
     background-color: rgb(30,30,30);
     padding: 10%;
     color: white;
 }
 
-#posicionamiento .container{
+#exito .container{
     text-align: center;
     padding: 12px;
 }
 
-/*secion trabajo-en-equip*/
-
-#trabajo-en-equip{
-    background-color: rgb(30,30,30);
-    padding: 15%;
-    color: white;
-}
-
-#trabajo-en-equip .container{
-    text-align: center;
-    padding: 12px;
-}
-
-#trabajo-en-equip img{
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-
-}
-
-/*seccion paciencia*/
-#paciencia {
+/*seccion Equipo*/
+#Equipo {
     padding: 20%;
 }
 
-#paciencia .container {
+#Equipo .container {
     text-align: center;
-    font-size: 4.5vw;
+    padding: 200px 12px;
+    font-size: 2.7vw;
+}
+
+/*seccion consejo*/
+
+#consejo {
+    background-color: rgb(30,30,30);
+    padding: 10%;
+    color: white;
+}
+
+#consejo .container{
+    text-align: center;
+    padding: 12px;
 }
 
 /*secion copyrigt*/
@@ -162,6 +151,7 @@ footer .conteiner {
     align-items: flex-end;
 }
 
+
 /*Vercion para PC*/
 @media (min-width:720px){
     /*barra*/
@@ -180,56 +170,67 @@ footer .conteiner {
     }
 
     /*primer parrafo*/
-
-    #Inicio .container{
-        max-width: 600px;
-    }
-
-    #inicio {
+    #termino-rush {
         padding: 200px;
     }
 
-    #inicio .container {
-        padding: 12px;
-    }
+    #termino-rush h3{
+        margin: 0;
+    } 
 
-    #inicio p{
+
+    #termino-rush p{
         display: block;
         text-align: center;
         font-size: 0.59em;
     }
     
-    #inicio h3{
-        margin: 0;
-    } 
 
     /*Segundo parrafo*/
-    #posicionamiento {
+    #exito {
         padding: 200px;
     }
 
-    #posicionamiento p{
+    #exito p{
         display: block;
-        text-align: center;        
+        text-align: center;
+        font-size: 1.35em;     
     }
 
-    #posicionamiento h3{
+    #exito h3{
         margin: 0;
+        font-size: 2.5em;
     }
 
     /*Tercer parrafo*/
-    #paciencia {
+    #Equipo {
         padding: 200px;
     }
 
-    #paciencia h3{
+    #Equipo h3{
         margin: 0;
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
-    #paciencia p{
+    #Equipo p{
         display: block;
         text-align: center;
-        font-size: 0.50em;
+        font-size: 0.90em;
+    }
+
+    /*Cuarto parrafo*/
+    #consejo {
+        padding: 250px;
+    }
+
+    #consejo h3 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    #consejo p {
+        display: block;
+        text-align: center;
+        font-size: 1.35em;
     }
 }
