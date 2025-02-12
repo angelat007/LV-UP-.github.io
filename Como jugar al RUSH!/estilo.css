@@ -132,6 +132,23 @@ header a:hover {
     padding: 12px;
 }
 
+/*seccion totorial*/
+#tutoriales-vid{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    font-size: 2em;
+}
+
 /*secion copyrigt*/
 
 footer {

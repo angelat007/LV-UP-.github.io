@@ -76,7 +76,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("Media/estrategia-img.jpg");
+    ,url("Media/img-miedo-principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -97,49 +97,48 @@ header a:hover {
 #inicio .container{
     text-align: center;
     padding: 200px 12px;
-    font-size: 4.5vw;
+    font-size: 3.4vw;
 
 }
 
 /*seccion posicionamiento*/
 
-#posicionamiento {
+#errores  {
     background-color: rgb(30,30,30);
     padding: 10%;
     color: white;
 }
 
-#posicionamiento .container{
+#errores  .container{
     text-align: center;
     padding: 12px;
 }
 
 /*secion trabajo-en-equip*/
 
-#trabajo-en-equip{
+#mentalidad{
     background-color: rgb(30,30,30);
     padding: 15%;
     color: white;
 }
 
-#trabajo-en-equip .container{
+#mentalidad .container{
     text-align: center;
     padding: 12px;
 }
 
-#trabajo-en-equip img{
+#mentalidad img{
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 /*seccion paciencia*/
-#paciencia {
+#Desensibilízate {
     padding: 20%;
 }
 
-#paciencia .container {
+#Desensibilízate .container {
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 3.6vw;
 }
 
 /*seccion videos tuto*/
@@ -155,7 +154,6 @@ header a:hover {
 .vid {
     align-items: center;
     justify-content: center;
-    column-gap: 20px;
     font-size: 2em;
 }
 
@@ -226,32 +224,53 @@ footer .conteiner {
     } 
 
     /*Segundo parrafo*/
-    #posicionamiento {
+    #errores  {
         padding: 200px;
     }
 
-    #posicionamiento p{
+    #errores  p{
         display: block;
         text-align: center;        
     }
 
-    #posicionamiento h3{
+    #errores  h3{
         margin: 0;
     }
 
     /*Tercer parrafo*/
-    #paciencia {
+    #mentalidad {
         padding: 200px;
     }
 
-    #paciencia h3{
+    #mentalidad h3{
         margin: 0;
-        font-size: 1em;
+        font-size: 2em;
     }
 
-    #paciencia p{
+    #mentalidad p{
+        display: block;
+        text-align: center;
+        font-size: 1.50em;
+    }
+
+    #Desensibilízate {
+        padding: 200px;
+    }
+
+    #Desensibilízate .container{
+        padding: 12px;
+    }
+
+    #Desensibilízate p{
         display: block;
         text-align: center;
         font-size: 0.50em;
     }
+
+    #Desensibilízate h3{
+        margin: 0;
+        font-size: 1em;
+    }
 }
+
+
