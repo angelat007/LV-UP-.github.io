@@ -1,11 +1,13 @@
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -13,18 +15,29 @@ header {
     width: 100%;
 }
 
-h1 {font-size: 2.5em;}
-h2{font-size: 1.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.24em;}
+h1 {
+    font-size: 2.5em;
+}
 
-button{
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.24em;
+}
+
+button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: blueviolet;
 }
@@ -38,13 +51,15 @@ button:hover {
     margin: auto;
 }
 
-.color-acentos{ color: blueviolet;}
+.color-acentos {
+    color: blueviolet;
+}
 
 /* SECCION BARRA*/
 
 
 header {
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
 }
 
 
@@ -79,6 +94,7 @@ header a {
 header a:hover {
     color: blueviolet;
 }
+
 /*secion-inicio*/
 #hero {
     display: flex;
@@ -87,197 +103,187 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 100vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/hero.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-#hero h1{
-        color: rgb(255, 255, 255);
+#hero h1 {
+    color: rgb(255, 255, 255);
 }
 
 /*animacion barra*/
 .separador {
-  width: 100%;
-  height: 6px;
-  background: linear-gradient(90deg, 
-    rgb(255, 0, 0),     /* Rojo */
-    rgb(255, 165, 0),   /* Naranja */
-    rgb(255, 255, 0),   /* Amarillo */
-    rgb(0, 255, 0),     /* Verde */
-    rgb(0, 0, 255),     /* Azul */
-    rgb(75, 0, 130),    /* Añil */
-    rgb(238, 130, 238)  /* Violeta */
-  );  background-size: 300% 100%;
-  animation: cambiarColores 3s linear infinite;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg,
+            rgb(255, 0, 0),
+            /* Rojo */
+            rgb(255, 165, 0),
+            /* Naranja */
+            rgb(255, 255, 0),
+            /* Amarillo */
+            rgb(0, 255, 0),
+            /* Verde */
+            rgb(0, 0, 255),
+            /* Azul */
+            rgb(75, 0, 130),
+            /* Añil */
+            rgb(238, 130, 238)
+            /* Violeta */
+        );
+    background-size: 300% 100%;
+    animation: cambiarColores 3s linear infinite;
 }
 
 @keyframes cambiarColores {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 /* SECCION accesorios */
 
 
-#accesorios .conteiner{
+#accesorios .conteiner {
     text-align: center;
     padding: 200px 12px;
 }
 
 /*Nuestors-tutoriales*/
 
-#Nuestors-tutoriales{
-    background-color: rgb(30,30,30);
+#Nuestors-tutoriales {
+    background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
 
-#Nuestors-programas h2{
+#Nuestors-programas h2 {
     margin-top: 0;
     font-size: 3.5em;
 }
 
-#Nuestors-tutoriales .conteiner{
+#Nuestors-tutoriales .conteiner {
     padding: 150px, 0px;
 }
 
-#Nuestors-tutoriales p{
+#Nuestors-tutoriales p {
     display: none;
 }
 
 /* cartas */
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/Estrategia-warzon.jpg");
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/Estrategia-warzon.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/Rush-fortnite.jpg");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/Rush-fortnite.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/Sin-MIEDO.jpg");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/Sin-MIEDO.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
 }
 
 /*mejores-componentes-PC*/
 
 #mejores-componentes-PC {
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
 
-#mejores-componentes-PC h2{
+#mejores-componentes-PC h2 {
     margin-top: 0;
     font-size: 3.5em;
 }
 
-#mejores-componentes-PC .conteiner{
+#mejores-componentes-PC .conteiner {
     padding: 150px, 0px;
 }
 
-#mejores-componentes-PC p{
+#mejores-componentes-PC p {
     display: none;
 }
 
 /* cartas */
 
-.cart:nth-child(1){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/RAM.jpg");
+.cart:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/RAM.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
 }
 
-.cart:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/GRAFICAS.jpg");
+.cart:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/GRAFICAS.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
 }
 
-.cart:nth-child(3){box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("Media/PROCESADORES.jpg");
+.cart:nth-child(3) {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("Media/PROCESADORES.jpg");
     background-position: center center;
     background-size: cover;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 /*Iniciar-seccion*/
@@ -286,7 +292,7 @@ header a:hover {
     font-size: 9vw;
 }
 
-#Iniciar-seccion button{
+#Iniciar-seccion button {
     font-size: 5vw;
 }
 
@@ -298,21 +304,22 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-color: rgb(30,30,30)
+    background-color: rgb(30, 30, 30)
 }
 
 /*©*/
 
 footer {
-    background-color: rgb(230,230,230);
+    background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
     font-size: 15px;
     margin: 0;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
     padding: 12px;
 }
+
 footer .conteiner {
     height: 150px;
     justify-content: center;
@@ -322,22 +329,22 @@ footer .conteiner {
 
 /*Vercion para PC*/
 
-@media (min-width:720px){
+@media (min-width:720px) {
     header {
         position: fixed;
         width: 100%;
     }
 
-    header .conteiner{
+    header .conteiner {
         flex-direction: row;
         justify-content: space-between;
     }
 
     header nav {
-        flex-direction: row;  
+        flex-direction: row;
     }
 
-    #accesorios .conteiner{
+    #accesorios .conteiner {
         max-width: 600px;
     }
 
@@ -346,17 +353,17 @@ footer .conteiner {
         justify-content: center;
     }
 
-    #Nuestors-tutoriales p{
+    #Nuestors-tutoriales p {
         display: block;
         margin-bottom: 30px;
     }
-    
-    #Nuestors-tutoriales h3{
-        margin: 0;
-    } 
 
-    #Nuestors-tutoriales .cartas{
-            padding: 50px;
+    #Nuestors-tutoriales h3 {
+        margin: 0;
+    }
+
+    #Nuestors-tutoriales .cartas {
+        padding: 50px;
     }
 
     #mejores-componentes-PC .carts {
@@ -364,16 +371,16 @@ footer .conteiner {
         justify-content: center;
     }
 
-    #mejores-componentes-PC p{
+    #mejores-componentes-PC p {
         display: block;
         margin-bottom: 30px;
     }
 
-    #mejores-componentes-PC h3{
+    #mejores-componentes-PC h3 {
         margin: 0;
     }
 
-    #mejores-componentes-PC .cart{
+    #mejores-componentes-PC .cart {
         padding: 50px;
     }
 }
