@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="url" content="https://LV-UP!.com" />
+    <meta name="identifier-URL" content="https://LV-UP!.com" />
+    <meta property="og:url" content="https://LV-UP!.com" />
     <title>LV UP!</title>
     <link rel="styles icon" href="Media/Mi-icon.png">
     <link rel="stylesheet" href="index.css">
@@ -18,7 +21,20 @@
                 <a href="#accesorios">Info</a>
                 <a href="#Nuestors-tutoriales">Totoriales</a>
                 <a href="#mejores-componentes-PC">Componentes de PC</a>
-                <a href="#Iniciar-seccion">Iniciar Sesion</a>
+                <a href="#IrVentanaFlotante">Iniciar Sesion</a>
+                <form id="IrVentanaFlotante" class="modal">
+                    <a href="#" class="X">X</a>
+                    <div id="ventana">
+                        <img src="Media/login.png" alt="User-img">
+                        <input type="text" id="username" placeholder="Coloca tu nombre" required>
+                        <input type="text" id="password" placeholder="Coloca tu contraseña" required>
+                        <div class="box-visible">
+                            <input type="checkbox" id="visible">
+                            <label for="visible">Mostrar contraseña</label>
+                        </div>
+                        <button type="submit" id="submit">Iniciar Sesion</button>
+                    </div>
+                </form>
                 <a href="#" id="cerrar-sesion">Cerrar Sesion</a>
             </nav>
         </div>

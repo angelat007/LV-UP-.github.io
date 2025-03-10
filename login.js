@@ -26,7 +26,3 @@ document.addEventListener("click", (e) => {
         }
     }
 });
-
-function SeguroQueQuieresIinicar() {
-    alert("Seguro que quieres iniciar sesion??")
-}
