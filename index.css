@@ -328,7 +328,7 @@ header a:hover {
 form {
     display: flex;
     box-shadow: 5px 2px 10px 2px #000000;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 form img {
@@ -365,7 +365,7 @@ form button {
     outline: 0;
     border: 0;
     background-color: blueviolet;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     width: 220px;
     padding: 0;
@@ -476,4 +476,10 @@ footer .conteiner {
     #mejores-componentes-PC .cart {
         padding: 50px;
     }
+
+    form button {
+        border-radius: 5px;
+    }
+
+    /*ventana float iniciar sesion*/
 }
